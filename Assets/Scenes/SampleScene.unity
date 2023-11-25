@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 127609128}
   - component: {fileID: 127609129}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,15 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97562183aa58e1a41acdb93f4eba5328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cars: 5
+  cars: 500
   all_lanes: 0
   Carro1: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
   Carro2: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
   Carro3: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
   Carro4: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
   Tren: {fileID: 7041496082619029126, guid: c86e57e63228a0f4fa8eb3aae6dc9b1c, type: 3}
-  rotation: {x: 0, y: 0, z: 0, w: 1}
-  sim_id: 
 --- !u!1 &241376134
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,8 +716,6 @@ MonoBehaviour:
   Carro3: {fileID: 0}
   Carro4: {fileID: 0}
   Tren: {fileID: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 1}
-  sim_id: 
 --- !u!114 &1923711743
 MonoBehaviour:
   m_ObjectHideFlags: 0
