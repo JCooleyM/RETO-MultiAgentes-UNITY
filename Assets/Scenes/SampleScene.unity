@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cars: 500
-  all_lanes: 0
+  all_lanes: 1
   Carro1: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
   Carro2: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
   Carro3: {fileID: 2890185844387223180, guid: 0160f34c8d766f64b993a925a682faf7, type: 3}
