@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SalidaTunel
   - EntradaAvenida
+  - FinCamino
   layers:
   - Default
   - TransparentFX

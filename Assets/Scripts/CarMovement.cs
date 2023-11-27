@@ -46,10 +46,9 @@ public class CarMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Verificar si el objeto colisionado tiene la etiqueta "Rotator"
+        
         if (other.CompareTag("SalidaTunel"))
         {
-            // Rotar 90 grados en el eje Y
             transform.Rotate(0, -90, 0);
         }
 

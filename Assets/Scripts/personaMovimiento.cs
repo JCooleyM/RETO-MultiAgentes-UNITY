@@ -2,22 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrenMovimiento : MonoBehaviour
+
+
+public class personaMovimiento : MonoBehaviour
 {
-    float speed = 25f;
-    Vector3 origen = new Vector3(0, 0, 0);
-    Vector3 destino = new Vector3(0, 0, 70);
-    Vector3 position = new Vector3(0, -0.14f, 30);
-    private Quaternion rotation = Quaternion.Euler(0, 90, 0);
-    public GameObject Vias;
+
+    public Vector3 origen = new Vector3(0, 0, 0);
+    public Vector3 destino = new Vector3(0, 0, 0);
+    float speed = 2f;
+    float rotationSpeed = .3f;
+    int cont = 40;
     
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Instantiate(Vias, position, rotation);
-    }
 
     // Update is called once per frame
     void Update()
@@ -30,7 +25,15 @@ public class TrenMovimiento : MonoBehaviour
         {
             float t = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, destino, t);
+
+            transform.Rotate(rotationSpeed, 0, 0, Space.Self);
+            cont++;
         }
-        
+
+        if (cont > 80) 
+        {
+            rotationSpeed = rotationSpeed * -1;
+            cont = 0;
+        }
     }
 }
