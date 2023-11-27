@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 5724476194024405929}
   - component: {fileID: 5724476194024405930}
   - component: {fileID: 5724476194024405931}
-  - component: {fileID: 5724476194024405928}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -118,20 +117,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5724476194024405928
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5724476194024405934}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &5724476194526235832
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +128,6 @@ GameObject:
   - component: {fileID: 5724476194526235835}
   - component: {fileID: 5724476194526235828}
   - component: {fileID: 5724476194526235829}
-  - component: {fileID: 5724476194526235834}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -216,20 +200,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5724476194526235834
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5724476194526235832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &5724476194594904555
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +211,6 @@ GameObject:
   - component: {fileID: 5724476194594904554}
   - component: {fileID: 5724476194594904551}
   - component: {fileID: 5724476194594904548}
-  - component: {fileID: 5724476194594904549}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -314,16 +283,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5724476194594904549
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5724476194594904555}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
