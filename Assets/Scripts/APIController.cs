@@ -18,6 +18,11 @@ public class APIController : MonoBehaviour
     public GameObject Carro3;
     public GameObject Carro4;
     public GameObject Tren;
+    public GameObject Sem_1_Main;
+    public GameObject Sem_1_Entry;
+    public GameObject Sem_2_Main;
+    public GameObject Sem_2_Entry;
+
 
     private Quaternion rotation = Quaternion.Euler(0, 0, 0);
     private string simId;
@@ -87,6 +92,19 @@ public class APIController : MonoBehaviour
             Vector3 position = new Vector3(0, 0, 0);
             Instantiate(Tren, position, rotation);;
         }
+        
+        // Instanciar luzes de semaforo
+        Vector3 sem1MainPosition = new Vector3(4.5f, 2, 21.8f);
+        Sem_1_Main = Instantiate(Sem_1_Main, sem1MainPosition, Quaternion.identity);
+
+        Vector3 sem1EntryPosition = new Vector3(4.7f, 2, 22f);
+        Sem_1_Entry = Instantiate(Sem_1_Entry, sem1EntryPosition, Quaternion.identity);
+
+        Vector3 sem2MainPosition = new Vector3(4.5f, 2, 41.8f);
+        Sem_2_Main = Instantiate(Sem_2_Main, sem2MainPosition, Quaternion.identity);
+        
+        Vector3 sem2EntryPosition = new Vector3(4.7f, 2, 42f);
+        Sem_2_Entry = Instantiate(Sem_2_Entry, sem2EntryPosition, Quaternion.identity);
 
         StartCoroutine(CorrerSimulacion());
     }
@@ -135,7 +153,35 @@ public class APIController : MonoBehaviour
 
         // Procesa el paso actual
         JSONNode step = simulacionSteps[index]["data"]["car_positions"];
+        JSONNode trafficLights = simulacionSteps[index]["data"]["Traffic_Lights"];
 
+        string Sem_1_Main_Color = trafficLights[0]["main_lane_state"];
+        string Sem_1_Entry_Color = trafficLights[0]["entry_lane_state"];
+        string Sem_2_Main_Color = trafficLights[1]["main_lane_state"];
+        string Sem_2_Entry_Color = trafficLights[1]["entry_lane_state"];
+
+        if (Sem_1_Main.TryGetComponent<TrafficLightColorChanger>(out var colorChanger1))
+        {
+            colorChanger1.ChangeColor(Sem_1_Main_Color);
+        }
+
+        if (Sem_1_Entry.TryGetComponent<TrafficLightColorChanger>(out var colorChanger2))
+        {
+            colorChanger2.ChangeColor(Sem_1_Entry_Color);
+        }
+
+        if (Sem_2_Main.TryGetComponent<TrafficLightColorChanger>(out var colorChanger3))
+        {
+            colorChanger3.ChangeColor(Sem_2_Main_Color);
+        }
+
+        if (Sem_2_Entry.TryGetComponent<TrafficLightColorChanger>(out var colorChanger4))
+        {
+            colorChanger4.ChangeColor(Sem_2_Entry_Color);
+        }
+
+        
+        
         for (int i = 0; i < step.Count; i++)
         {
             int carId = step[i]["id"].AsInt;
