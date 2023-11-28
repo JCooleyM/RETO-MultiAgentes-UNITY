@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrenMovimiento : MonoBehaviour
 {
-    float speed = 25f;
+    float speed = 10f;
     Vector3 origen = new Vector3(0, 0, 0);
     Vector3 destino = new Vector3(0, 0, 70);
     Vector3 position = new Vector3(0, -0.14f, 30);

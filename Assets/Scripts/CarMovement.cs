@@ -40,7 +40,7 @@ public class CarMovement : MonoBehaviour
 
     void Start()
     {
-        // Inicializar con la posici�n actual para evitar movimientos no deseados
+        // Inicializar con la posicion actual para evitar movimientos no deseados
         targetPosition = transform.position;
     }
 

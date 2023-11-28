@@ -13,6 +13,7 @@ public class APIController : MonoBehaviour
     public int cars = 1000;
     public bool all_lanes = true;
 
+    public TextMeshProUGUI ResultText;
     public GameObject Carro1;
     public GameObject Carro2;
     public GameObject Carro3;
@@ -129,9 +130,11 @@ public class APIController : MonoBehaviour
 
             JSONNode simulationInfo = JSON.Parse(InitialInfoRequest.downloadHandler.text);
             
-            // CUando termine la simulacion nos salimos del while
+            // Cuando termine la simulacion nos salimos del while
             if (simulationInfo["message"].Value == "Simulation finished")
             {
+                // Cambiar el texto para desplegar los resultados.
+                ResultText.text = "Steps Totales: " + simulationInfo["total_steps"] + "\nCarros/step: " + Math.Round(simulationInfo["cars_per_step"].AsFloat, 3);
                 break;
             }
 
@@ -143,6 +146,7 @@ public class APIController : MonoBehaviour
     //Start is called before the first frame update
     void Start()
     {
+        ResultText.text = "";
         StartCoroutine(IniciarSimulacion());    
     }
 
