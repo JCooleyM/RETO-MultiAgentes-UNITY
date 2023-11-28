@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97562183aa58e1a41acdb93f4eba5328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cars: 100
+  cars: 500
   all_lanes: 0
   ResultText: {fileID: 1185008861}
   Carro1: {fileID: 2415027443396458071, guid: 64905e4a20bbb4b429c6352aabea49cf, type: 3}

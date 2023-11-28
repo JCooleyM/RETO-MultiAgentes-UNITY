@@ -10,6 +10,7 @@ public class CarMovement : MonoBehaviour
     private float moveDuration = 0.5f;
     private float rotationDuration = .5f;
     private bool isMoving = false;
+    private float elapsedTime = 0;
 
     public void moveTowardsPosition(Vector3 newPos)
     {
@@ -17,6 +18,9 @@ public class CarMovement : MonoBehaviour
         {
             targetPosition = newPos;
             StartCoroutine(MoveToPosition(targetPosition, moveDuration));
+        } else if (newPos != targetPosition)
+        {
+            elapsedTime = moveDuration;
         }
     }
 
@@ -25,7 +29,7 @@ public class CarMovement : MonoBehaviour
     {
         isMoving = true;
         Vector3 startPosition = transform.position;
-        float elapsedTime = 0;
+        elapsedTime = 0;
 
         while (elapsedTime < duration)
         {

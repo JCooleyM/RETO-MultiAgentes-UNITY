@@ -20,7 +20,7 @@ public class DestroyCars : MonoBehaviour
     {
         if (other.CompareTag("Car"))
         {
-            Destroy(other.gameObject, 3f);
+            Destroy(other.gameObject, 5f);
         }
     }
 }
