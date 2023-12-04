@@ -6,19 +6,19 @@ Proyecto en Unity para la simulación de un sistema multiagente en el que se sim
 
 ---
 
-Este repositorio es usado en conjunto con el repositorio [Avenue-Multiagent-System-Simulation-API](https://github.com/CDavidSV/Avenue-Multiagent-System-Simulation-API) para obtener los datos de la simulación.
+Este repositorio es usado en conjunto con [Avenue-Multiagent-System-Simulation-API](https://github.com/CDavidSV/Avenue-Multiagent-System-Simulation-API) para obtener los datos de la simulación.
+Se utiliza una API desarrollada en Python para generar la simulación y obtener los datos de la misma en Unity.
 
 ---
 
 ## Requisitos
-1. Tener el repositorio [Avenue-Multiagent-System-Simulation-API](https://github.com/CDavidSV/Avenue-Multiagent-System-Simulation-API)
-2. Tener instalado Unity 2021.3.26f1
-3. Tener instalado Python 3.11 o superior
+1. Tener instalado Unity 2021.3.26f1
+2. Tener instalado Python 3.11 o superior
 
 ---
 
 ## Correr la simulación
 1. Abrir el proyecto en Unity
 2. Abrir la escena `Assets/Scenes/SampleScene.unity`
-3. Correr el servidor [Avenue-Multiagent-System-Simulation-API](https://github.com/CDavidSV/Avenue-Multiagent-System-Simulation-API)
+3. Correr el servidor de Python (Información de como hacer esto en [Avenue-Multiagent-System-Simulation-API](https://github.com/CDavidSV/Avenue-Multiagent-System-Simulation-API))
 4. Correr la simulación en Unity
