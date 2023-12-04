@@ -2,6 +2,8 @@
 
 Proyecto en Unity para la simulación de un sistema multiagente en el que se simula el comportamiento de los vehículos en una avenida.
 
+![Screenshot 2023-12-01 003600](https://github.com/JCooleyM/RETO-MultiAgentes-UNITY/assets/88672259/4942a1ea-5ab9-45d9-ac1c-8ec0697dce94)
+
 ---
 
 Este repositorio es usado en conjunto con el repositorio [Avenue-Multiagent-System-Simulation-API](https://github.com/CDavidSV/Avenue-Multiagent-System-Simulation-API) para obtener los datos de la simulación.
