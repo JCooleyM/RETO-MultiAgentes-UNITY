@@ -2,6 +2,13 @@
 
 Proyecto en Unity para la simulación de un sistema multiagente en el que se simula el comportamiento de los vehículos en una avenida.
 
+Equipo:
+
+- Carlos David Sandoval Vargas
+- [Fernando Enrique Martínez Rodríguez](https://github.com/FernandoMartinez03)
+- [Fernando Aurelio Burgos Sánchez](https://github.com/FernandoBurgos)
+- [Jorge Cooley Magallanes](https://github.com/JCooleyM)
+
 ![Screenshot 2023-12-01 003600](https://github.com/JCooleyM/RETO-MultiAgentes-UNITY/assets/88672259/4942a1ea-5ab9-45d9-ac1c-8ec0697dce94)
 
 ---
